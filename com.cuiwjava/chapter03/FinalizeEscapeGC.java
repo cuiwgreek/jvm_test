@@ -12,6 +12,11 @@ package chapter03;
  * 1. 对象可以在被GC时自我拯救
  * 2. 这种自救的机会只有一次，因为一个对象finalize() 方法最多只会被系统自动调用一次
  */
+
+/**
+ * 注意:
+ * 1. finalize()方法并不提倡使用,try-finally 或者其他方式都可以做的更好，更及时
+ */
 public class FinalizeEscapeGC {
 	public static FinalizeEscapeGC SAVE_HOOK = null;
 
